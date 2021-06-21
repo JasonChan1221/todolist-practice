@@ -1,0 +1,22 @@
+body {
+    background: url('./image/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+#mainContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    margin-top:50px;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+}
