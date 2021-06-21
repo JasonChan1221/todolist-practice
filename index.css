@@ -5,18 +5,86 @@ body {
     background-size: cover;
     -o-background-size: cover;
   }
-#mainContainer{
+.container{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 #header{
-    margin-top:50px;
+    margin: 50px;
 }
-
-#content{
-    display: flex;
+.headerContent{
+    display:flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent .title span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.headerContent .buttonSet i{
+    font-size: 3em;
+}
+#middle{
+    margin: 15px;
+}
+.addContent{
+    display:flex;
+    flex-direction: row;
+}
+.addContent form input[type=submit]{
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 22px;
+    background-color: #008CBA;
+    color:white;
+}
+.addContent form input[type=text]{
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 22px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    text-align: center;
+    padding:5px 12px;
+    margin: 10px;
+}
+.item:hover{
+    transform: scale(1.06);
+    background: #bebabc;
+}
+.item .content span{
+    margin-right: 10px;
+    font-size: 27px;
+}
+.item .content i{
+    font-size: 1.5em;
+    margin: 5px;
+}
+.item .date{
+    padding-left: 2px;
+    text-align: left;
+}
+.item .date span{
+    font-size: 3px;
+    color:#808080;
 }
