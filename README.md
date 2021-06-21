@@ -1,3 +1,3 @@
 #todolist-practice
 <br>Just for practice
-<br>Using node.js expressJs to try!
+<br>Using node.js expressJs typescript!
