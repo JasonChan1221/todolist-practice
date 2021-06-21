@@ -20,11 +20,12 @@ function deleteItem(event){
     const btn = event.currentTarget;
     const str_id = btn.id.replace("del_", "");
     const id = parseInt(str_id);
-    console.log(items[id]);
-    for(let item of items)
-        if(item.id==id){
-            items.splice(items.indexOf(item.id),1);
+    for(let i=0;i<items.length;i++){
+        if(items[i].id==id){
+            console.log(items[i]);
+            items.splice(i,1);
         }
+    }
     localStorage.setItem('items',JSON.stringify(items));
     itemList.innerHTML="";
     getItem();
